@@ -246,9 +246,26 @@ img {
 }
 .image-list .item {
   width: calc((100% - 30px * 2) / 3);
+  position: relative;
 }
 .image-list .item:not(:last-child) {
   margin-right: 30px;
+}
+.image-list .subtitle {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-weight: bold;
+  line-height: 1.14;
+  text-align: center;
+  color: #ffffff;
 }
 
 /* main */ /* ----------- Команда ------------------ */
