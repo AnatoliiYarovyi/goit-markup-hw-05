@@ -515,7 +515,38 @@ button {
 
   overflow: hidden;
 }
-.cards .desc::before {
+.cards .desc-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(105%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms var(--timing-function);
+}
+.cards .item:hover .desc-overlay {
+  transform: translateY(0);
+}
+.desc-overlay .excerpt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 63px 24px;
+  overflow: auto;
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--white-color);
+}
+
+/* .cards .desc::before {
   content: '';
   position: absolute;
   top: 0;
@@ -550,7 +581,7 @@ button {
 }
 .cards .item:hover .excerpt {
   transform: translateY(0);
-}
+} */
 .cards .content {
   padding: 20px 24px;
 }
