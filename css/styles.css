@@ -89,6 +89,10 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -317,6 +321,10 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-network .item:not(:last-child) {
   margin-right: 10px;
@@ -327,7 +335,7 @@ img {
 }
 .social-network .item:hover,
 .social-network .item:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
 }
 .social-network .item:hover .icon,
 .social-network .item:focus .icon {
@@ -348,6 +356,10 @@ img {
   width: calc((100% - 30px * 5) / 6);
   height: 90px;
 
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -363,6 +375,10 @@ img {
 }
 .clients .icon {
   fill: var(--icon-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients .item:hover,
 .clients .item:focus {
@@ -399,6 +415,10 @@ img {
 }
 .address .link {
   display: block;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: var(--ftr-link-color);
   font-style: normal;
@@ -447,6 +467,10 @@ button {
   padding: 6px 22px;
   border: transparent;
 
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
@@ -474,6 +498,10 @@ button {
   width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards .item:nth-child(3n) {
   margin-right: 0;
